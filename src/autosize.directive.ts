@@ -59,7 +59,9 @@ export class Autosize implements AfterViewInit {
       this.el.style.resize = 'none';
     }
     // run first adjust
-    this.adjust();
+    setTimeout(() => {
+      this.adjust();
+    });
   }
 
   adjust(): void {
